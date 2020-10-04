@@ -6,12 +6,39 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8749a40-5999-4b12-8602-3f1fec4bf45e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/errores.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/navbar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/errores/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/main/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601849163862</updated>
-      <workItem from="1601849164990" duration="398000" />
+      <workItem from="1601849164990" duration="5844000" />
     </task>
     <servers />
   </component>
@@ -59,5 +86,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601852561370">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601852561370" />
   </component>
 </project>
