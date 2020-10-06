@@ -25,21 +25,21 @@
     </thead>
 
     <tbody>
+    <?php
+    foreach ($this->destinos as $destino){
+    ?>
     <tr>
-        <td>Alvin</td>
-        <td>Eclair</td>
-        <td>$0.87</td>
+        <td><?= $destino["id"]?></td>
+        <td><?= $destino["nombre"]?></td>
+        <td><?= $destino["descripcion"]?></td>
+        <td><?= $destino["imagen"]?></td>
+        <td>Modificar</td>
+        <td>Eliminar</td>
+
     </tr>
-    <tr>
-        <td>Alan</td>
-        <td>Jellybean</td>
-        <td>$3.76</td>
-    </tr>
-    <tr>
-        <td>Jonathan</td>
-        <td>Lollipop</td>
-        <td>$7.00</td>
-    </tr>
+    <?php
+    }
+    ?>
     </tbody>
 </table>
 
