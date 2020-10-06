@@ -15,7 +15,7 @@
                 require_once 'controllers/main.php';
                 $controller = new Main;
                 $controller->loadModel('main');
-
+                //$controller->render();
             }
             elseif (file_exists($fileController)){
                 require_once $fileController;
@@ -29,8 +29,11 @@
 
             }
 
-            if (!empty($url[1])){
+            if (isset($url[1])){
                 $controller->{$url[1]}();
+            }
+            else{
+                $controller->render();
             }
 
         }

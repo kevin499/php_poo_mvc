@@ -1,6 +1,6 @@
 <?php
 
-    define( 'URL', 'http://' . $_SERVER['HTTP_HOST'] .'/');
+    define( 'URL', 'http://' . $_SERVER['HTTP_HOST'] .'/proyectos/viajes_MVC/');
 
     define( 'HOST', 'localhost' );
     define( 'DB', 'viajes' );

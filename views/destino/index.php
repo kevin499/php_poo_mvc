@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="<?= constant('URL') ?>public/css/default.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -15,7 +17,7 @@
 
 <h1 class='center'>Lista de destinos</h1>
 
-<table>
+<table class="big-table">
     <thead>
     <tr>
         <th>Name</th>
@@ -26,19 +28,22 @@
 
     <tbody>
     <?php
-    foreach ($this->destinos as $destino){
-    ?>
+        if (!empty($this->destinos)){
+            foreach ($this->destinos as $destino){
+        ?>
     <tr>
         <td><?= $destino["id"]?></td>
         <td><?= $destino["nombre"]?></td>
         <td><?= $destino["descripcion"]?></td>
         <td><?= $destino["imagen"]?></td>
-        <td>Modificar</td>
-        <td>Eliminar</td>
-
+        <td>
+            <a class="waves-effect waves-light btn-small amber">Modificar</a>
+            <a class="waves-effect waves-light btn-small red">Eliminar</a>
+        </td>
     </tr>
     <?php
-    }
+    }        }
+
     ?>
     </tbody>
 </table>
