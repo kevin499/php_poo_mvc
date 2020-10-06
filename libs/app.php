@@ -14,14 +14,19 @@
             if (empty($url[0])){
                 require_once 'controllers/main.php';
                 $controller = new Main;
+                $controller->loadModel('main');
+
             }
             elseif (file_exists($fileController)){
                 require_once $fileController;
                 $controller = new $url[0];
+                $controller->loadModel($url[0]);
             }
             else{
                 require_once 'controllers/errores.php';
                 $controller = new errores;
+                $controller->loadModel('errores');
+
             }
 
             if (!empty($url[1])){

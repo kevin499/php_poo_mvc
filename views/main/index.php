@@ -11,19 +11,19 @@
 
 </head>
 <body>
-    <?= include 'libs/navbar.php'; ?>
+    <?php include 'libs/navbar.php'; ?>
 
     <h1 class='center'>Bievenido</h1>
 
     <p class='center'>¿Qué deseas hacer?</p>
     <div class='center'>
-        <a href="destinos" class="waves-effect waves-light btn-large"><i class="material-icons left">map</i> Ver destinos</a>
-        <a href="viajes" class="waves-effect waves-light btn-large"><i class="material-icons left">airplanemode_active</i>Ver viajes</a>
+        <a href="destino" class="waves-effect waves-light btn-large"><i class="material-icons left">map</i> Ver destinos</a>
+        <a href="viaje" class="waves-effect waves-light btn-large"><i class="material-icons left">airplanemode_active</i>Ver viajes</a>
     </div>
 
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <?= include 'libs/footer.php'; ?>
+    <?php include 'libs/footer.php'; ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>

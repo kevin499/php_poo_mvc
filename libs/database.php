@@ -1,6 +1,6 @@
 <?php
 
-    class Conexion{
+    class Database{
         private $host;
         private $db;
         private $user;
@@ -17,11 +17,11 @@
 
         }
 
-        public static function connect()
+        public function connect()
         {
             try {
-                $conexion
-                $pdo = new PDO();
+                $connection = 'mysql:host='.$this->host. ';dbname='.$this->db.';charset='.$this->charset;
+                $pdo = new PDO($connection, $this->user, $this->password);
 
                 return $pdo;
             }
