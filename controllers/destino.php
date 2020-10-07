@@ -5,6 +5,7 @@ class Destino extends Controller{
         parent::__construct();
 
         $this->view->destinos = "";
+
     }
 
     public function render(){
@@ -37,6 +38,14 @@ class Destino extends Controller{
             echo json_encode(array("success" => false,"error" => "Completar campos"));
 
         }
+
+    }
+
+    public function traerDestinoPorId()
+    {
+        $id = $_GET["id"];
+
+        echo json_encode($this->model->traerDestinoPorId($id));
 
     }
 }

@@ -42,6 +42,21 @@
             //$this->db->connect();
         }
 
+        public function traerDestinoPorId($id)
+        {
+            $sql="SELECT id,nombre,descripcion,imagen FROM destino WHERE id = :id";
+            try {
+                $query = $this->db->connect()->prepare($sql);
+                $query->bindParam(':id', $id, PDO::PARAM_INT);
+                $query->execute();
+                $response = $query->fetch();
+                return $response;
+            }
+            catch (PDOException $e){
+                return false;
+            }
+        }
+
         /**
          * @return mixed
          */

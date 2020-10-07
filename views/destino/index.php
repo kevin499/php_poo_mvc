@@ -41,8 +41,8 @@
                     <td><?= $destino["descripcion"]?></td>
                     <td><img class="tabla-imagen" src="<?=$destino["imagen"]?>" alt="Imagen destino"></td>
                     <td class="tabla-botones">
-                        <a class="waves-effect waves-light btn-small amber">Modificar</a>
-                        <a class="waves-effect waves-light btn-small red">Eliminar</a>
+                        <a data-id="<?= $destino["id"]?>" class="modificarDestinoButton waves-effect waves-light btn-small amber">Modificar</a>
+                        <a data-id="<?= $destino["id"]?>" class="eliminarDestinoButton waves-effect waves-light btn-small red">Eliminar</a>
                     </td>
                 </tr>
                 <?php
@@ -79,6 +79,37 @@
                 </div>
                 <div class="modal-footer">
                     <button class="submit waves-effect waves-light btn-small amber">Registrar nuevo destino</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="modificarDestinoModal" class="modal">
+    <div class="modal-content">
+        <h4>Modificar destino</h4>
+        <div class="row">
+            <form class="col s12" id="modificarDestinoForm">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="nombreModif" name="nombre" type="text" class="validate">
+                        <label for="nombreModif">Nombre del destino</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="descripcionModif" name="descripcion" class="materialize-textarea"></textarea>
+                        <label for="descripcionModif">Descripción</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="imagenModif" name="imagen" type="text" class="validate">
+                        <label for="imagenModif">URL de la imagen</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="submit waves-effect waves-light btn-small amber">Modificar destino</button>
                 </div>
             </form>
         </div>
