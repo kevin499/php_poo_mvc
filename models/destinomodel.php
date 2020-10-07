@@ -27,11 +27,17 @@
 
         }
 
-        public function registrarNuevoDestino()
+        public function registrarNuevoDestino($datos)
         {
-            echo "Insertamios ebn la BD";
-            $sql="INSERT TANTO";
-            $this->db->connect()->prepare($sql)->execute();
+            $sql="INSERT INTO destino(nombre,descripcion,imagen) VALUES (:nombre,:descripcion,:imagen)";
+            try {
+                $query = $this->db->connect()->prepare($sql);
+                $query->execute(['nombre'=>$datos['nombre'],'descripcion'=>$datos['descripcion'],'imagen'=>$datos['imagen']]);
+                return true;
+            }
+            catch (PDOException $e){
+                return false;
+            }
 
             //$this->db->connect();
         }

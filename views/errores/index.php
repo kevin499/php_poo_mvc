@@ -11,13 +11,13 @@
 
 </head>
 <body>
-<?php include 'libs/navbar.php'; ?>
+<?php include 'views/navbar.php'; ?>
 
 <h1 class='center orange darken-2'>La pagina que estas buscando no existe.</h1>
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<?php include 'libs/footer.php'; ?>
+<?php include 'views/footer.php'; ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>

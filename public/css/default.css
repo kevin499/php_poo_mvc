@@ -1,7 +1,16 @@
-.big-table{
-    background: red!important;
-    width: 10px;
+.big-table-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
-body{
-    background: red;
+.big-table{
+    width: 75%;
+}
+.tabla-botones{
+    width: 300px;
+}
+.tabla-imagen{
+    width: 200px;
+    height: 100px;
 }

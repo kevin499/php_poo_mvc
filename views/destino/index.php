@@ -13,45 +13,82 @@
 
 </head>
 <body>
-<?php include 'libs/navbar.php'; ?>
+<?php include 'views/navbar.php'; ?>
 
-<h1 class='center'>Lista de destinos</h1>
+<h1 class='center'>Lista de destinos
+    <a class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#registrarDestinoModal"><i class="material-icons">add</i></a>
+</h1>
 
-<table class="big-table">
-    <thead>
-    <tr>
-        <th>Name</th>
-        <th>Item Name</th>
-        <th>Item Price</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    <?php
+<div class="big-table-container">
+    <table class="big-table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Destino</th>
+            <th>Descripción</th>
+            <th>Imagen</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php
         if (!empty($this->destinos)){
             foreach ($this->destinos as $destino){
+                ?>
+                <tr>
+                    <td><?= $destino["id"]?></td>
+                    <td><?= $destino["nombre"]?></td>
+                    <td><?= $destino["descripcion"]?></td>
+                    <td><img class="tabla-imagen" src="<?=$destino["imagen"]?>" alt="Imagen destino"></td>
+                    <td class="tabla-botones">
+                        <a class="waves-effect waves-light btn-small amber">Modificar</a>
+                        <a class="waves-effect waves-light btn-small red">Eliminar</a>
+                    </td>
+                </tr>
+                <?php
+            }        }
         ?>
-    <tr>
-        <td><?= $destino["id"]?></td>
-        <td><?= $destino["nombre"]?></td>
-        <td><?= $destino["descripcion"]?></td>
-        <td><?= $destino["imagen"]?></td>
-        <td>
-            <a class="waves-effect waves-light btn-small amber">Modificar</a>
-            <a class="waves-effect waves-light btn-small red">Eliminar</a>
-        </td>
-    </tr>
-    <?php
-    }        }
+        </tbody>
+    </table>
+</div>
 
-    ?>
-    </tbody>
-</table>
 
+
+<div id="registrarDestinoModal" class="modal">
+    <div class="modal-content">
+        <h4>Registrar nuevo destino</h4>
+        <div class="row">
+            <form class="col s12" id="registrarDestinoForm">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="nombre" name="nombre" type="text" class="validate">
+                        <label for="nombre">Nombre del destino</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="descripcion" name="descripcion" class="materialize-textarea"></textarea>
+                        <label for="descripcion">Descripción</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="imagen" name="imagen" type="text" class="validate">
+                        <label for="imagen">URL de la imagen</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="submit waves-effect waves-light btn-small amber">Registrar nuevo destino</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<?php include 'libs/footer.php'; ?>
-
+<?php include 'views/footer.php'; ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="<?= constant('URL') ?>public/js/default.js"></script>
 </body>
 </html>

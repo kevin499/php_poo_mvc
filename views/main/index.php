@@ -9,11 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="<?= constant('URL') ?>public/css/default.css" rel="stylesheet">
-
-
 </head>
 <body>
-    <?php include 'libs/navbar.php'; ?>
+    <?php include 'views/navbar.php'; ?>
 
     <h1 class='center'>Bievenido</h1>
 
@@ -25,7 +23,7 @@
 
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <?php include 'libs/footer.php'; ?>
+    <?php include 'views/footer.php'; ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
