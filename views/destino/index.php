@@ -19,37 +19,8 @@
     <a class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#registrarDestinoModal"><i class="material-icons">add</i></a>
 </h1>
 
-<div class="big-table-container">
-    <table class="big-table">
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>Destino</th>
-            <th>Descripción</th>
-            <th>Imagen</th>
-            <th></th>
-        </tr>
-        </thead>
-        <tbody>
-        <?php
-        if (!empty($this->destinos)){
-            foreach ($this->destinos as $destino){
-                ?>
-                <tr>
-                    <td><?= $destino["id"]?></td>
-                    <td><?= $destino["nombre"]?></td>
-                    <td><?= $destino["descripcion"]?></td>
-                    <td><img class="tabla-imagen" src="<?=$destino["imagen"]?>" alt="Imagen destino"></td>
-                    <td class="tabla-botones">
-                        <a data-id="<?= $destino["id"]?>" class="modificarDestinoButton waves-effect waves-light btn-small amber">Modificar</a>
-                        <a data-id="<?= $destino["id"]?>" class="eliminarDestinoButton waves-effect waves-light btn-small red">Eliminar</a>
-                    </td>
-                </tr>
-                <?php
-            }        }
-        ?>
-        </tbody>
-    </table>
+<div id="tablaDestino" class="big-table-container">
+
 </div>
 
 
@@ -90,6 +61,8 @@
         <h4>Modificar destino</h4>
         <div class="row">
             <form class="col s12" id="modificarDestinoForm">
+                <input name="id_modificar" type="hidden">
+
                 <div class="row">
                     <div class="input-field col s12">
                         <input id="nombreModif" name="nombre" type="text" class="validate">

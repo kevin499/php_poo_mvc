@@ -13,7 +13,7 @@
 
         public function listar()
         {
-            $sql="SELECT id, nombre, descripcion, imagen FROM Destino";
+            $sql="SELECT id, nombre, descripcion, imagen FROM Destino ORDER BY id DESC";
             try {
                 $pdo = $this->db->connect();
                 $stmt = $pdo->prepare($sql);
@@ -39,7 +39,32 @@
                 return false;
             }
 
-            //$this->db->connect();
+        }
+        public function modificarDestino($datos)
+        {
+            $sql = "UPDATE destino SET nombre = :nombre, descripcion = :descripcion, imagen = :imagen WHERE id = :id";
+            try {
+                $query = $this->db->connect()->prepare($sql);
+                $query->execute(['id'=>$datos['id'],'nombre'=>$datos['nombre'],'descripcion'=>$datos['descripcion'],'imagen'=>$datos['imagen']]);
+                return true;
+            }
+            catch (PDOException $e){
+                return false;
+            }
+        }
+
+        public function eliminarDestino($id)
+        {
+            $sql = "DELETE FROM destino WHERE id = :id";
+            try {
+                $query = $this->db->connect()->prepare($sql);
+                $query->bindParam('id', $id, PDO::PARAM_INT);
+                $query->execute();
+                return true;
+            }
+            catch (PDOException $e){
+                return false;
+            }
         }
 
         public function traerDestinoPorId($id)
