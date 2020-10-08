@@ -1,3 +1,5 @@
-Hacer una web en la que se puedan cargar viajes sobre destinos, colocando el destino inicial y el destino final.
+Implemento un modelo de prueba denominado viajes, en donde hay 2 CRUDs que se encargan de administrar los viajes y los destinos.
 
-Utilizar el patrón MVC para el desarrollo de la app
+Se implementó un patrón MVC para el desarrollo y  se utilizó AJAX para la interacción cliente/servidor.
+
+Para el desarrollo de las vistas se utilizó materialize y sweetalert2.
