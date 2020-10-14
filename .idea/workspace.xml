@@ -29,13 +29,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8749a40-5999-4b12-8602-3f1fec4bf45e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/Aare.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/libs/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/errores/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/errores/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/main/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/main/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/default.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/navbar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +80,7 @@
       <workItem from="1602021114772" duration="15668000" />
       <workItem from="1602100755657" duration="7153000" />
       <workItem from="1602200448212" duration="927000" />
-      <workItem from="1602631078230" duration="3642000" />
+      <workItem from="1602631078230" duration="4091000" />
     </task>
     <servers />
   </component>

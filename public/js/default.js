@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.modal');
     var instances = M.Modal.init(elems, "opacity");
     getAjaxResponse('http://localhost/proyectos/viajes_MVC/destino/listar',"GET").then(result => tablaDestino.innerHTML = result)
-    });
+});
 
 
 
