@@ -8,12 +8,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="<?= constant('URL') ?>public/css/default.css" rel="stylesheet">
 
 </head>
 <body>
 <?php include 'views/navbar.php'; ?>
+<div class="page-not-found">
+    <i class="material-icons left">sentiment_very_dissatisfied</i>
+    <h3 class='center'>La pagina que estas buscando no existe.</h3>
+</div>
 
-<h1 class='center orange darken-2'>La pagina que estas buscando no existe.</h1>
+
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

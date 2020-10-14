@@ -14,8 +14,8 @@
             if (empty($url[0])){
                 require_once 'controllers/main.php';
                 $controller = new Main;
-                $controller->loadModel('main');
-                //$controller->render();
+                //$controller->loadModel('main');
+                $controller->render();
             }
             elseif (file_exists($fileController)){
                 require_once $fileController;
