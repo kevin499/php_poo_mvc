@@ -3,6 +3,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    margin-bottom: 200px;
 }
 .big-table{
     width: 75%;
@@ -16,9 +17,6 @@
 }
 .brand-logo{
     margin: 0px 20px;
-}
-body{
-    overflow: hidden;
 }
 .main{
     width: 100%;
@@ -44,9 +42,10 @@ body{
 }
 
 .page-footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 10;
 }
 .page-not-found{
     margin: 50px;
